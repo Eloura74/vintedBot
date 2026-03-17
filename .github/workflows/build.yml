@@ -47,10 +47,9 @@ jobs:
           cd ..
 
       - name: Build/Release Electron App
-        uses: samuelmeuli/action-electron-builder@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          package_root: 'desktop'
-          # Supprimé --config car package_root déplace déjà le contexte dans ./desktop
-          args: ""
-          release: true
+        run: |
+          cd desktop
+          npx electron-builder --publish always
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
