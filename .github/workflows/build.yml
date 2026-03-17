@@ -51,7 +51,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           package_root: 'desktop'
-          # Pour ne pas avoir besoin de certificats de signature tout de suite (mode non-signé)
-          max_attempts: 3
-          args: "--config desktop/package.json"
+          # Supprimé --config car package_root déplace déjà le contexte dans ./desktop
+          args: ""
           release: true
