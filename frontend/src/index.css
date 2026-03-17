@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-vinted-dark: #0f172a;
+  --color-vinted-accent: #007782;
+  --color-vinted-glow: #00f2ff;
+}
+
+:root {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}

@@ -1,0 +1,39 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+session.json
+
+# Databases
+*.sqlite
+*.db
+
+# Build & Dist
+dist/
+build/
+win-unpacked/
+*.exe
+*.dmg
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Electron
+builder-debug.yml
+builder-effective-config.yaml
