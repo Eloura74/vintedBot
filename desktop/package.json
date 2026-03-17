@@ -2,6 +2,11 @@
   "name": "vinted-sniper-desktop",
   "version": "1.0.0",
   "description": "Vinted Sniper Standalone Application",
+  "author": "Quentin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Eloura74/vintedBot.git"
+  },
   "main": "main.js",
   "scripts": {
     "start": "electron .",
